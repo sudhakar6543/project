@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html lang="en"> <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Todo App</title>
+ <!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/
+css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min
+.js"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap￾icons@1.5.0/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css
+/all.css" integrity="sha384-
+SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="an
+onymous">
+ <link rel="stylesheet" href="style.css">
+</head> <body>
+ <div class="wrapper">
+ <header>Todo App</header>
+ <div class="inputField">
+ <input type="text" placeholder="Add your new todo"/>
+ <form >
+ <select id="myList">
+ <option value="0">Priority</option>
+ <option value="1">High</option>
+ <option value="2">Medium</option>
+ <option value="3">Low</option>
+ </select>
+ </form>
+ <!-- <button onclick="foo();">add</button> -->
+ <button onclick="addTodo();"><i class="bi bi-plus-circle"></i></button>
+ </div>
+ 
+ 
+ <ul class="todoList">
+ <!-- data are comes from local storage -->
+ </ul>
+ <div class="footer">
+ <span>You have <span class="pendingTasks"></span> pending tasks</span>
+ <button onclick="deleteAllTasks();">Clear All</button>
+ </div>
+ <br><br>
+ <button onclick="high();">High</button>
+ <button onclick="medium();">Medium</button>
+ <button onclick="low();">Low</button>
+ <button onclick="showTodos();">show all</button>
+ <br><div class="result"></div>
+ </div>
+ 
+ 
+ <script src="script.js">
+ 
+ 
+</script>
+ 
+</body>
+</html>
